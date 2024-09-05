@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Evita que a página role horizontalmente */
+}
+
+.navbar {
+    width: 100%;
+    background-color: #333;
+    padding: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    position: relative;
+}
+
+.menu-hamburger {
+    cursor: pointer;
+}
+
+.menu-hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+.slide-menu {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Inicia fora da tela */
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    padding-top: 20px;
+    transition: 0.3s ease;
+    z-index: 20;
+}
+
+.slide-menu.show {
+    left: 0; /* Move o menu para dentro da tela */
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.slide-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 50px 0 0 0;
+}
+
+.slide-menu ul li {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #555;
+}
+
+.slide-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.poster {
+    width: 100%;
+    margin-top: 20px; /* Espaçamento entre a navbar e o pôster */
+    text-align: center; /* Centraliza a imagem do pôster */
+}
+
+.poster img {
+    max-width: 90%; /* Mantém um pequeno espaçamento nas laterais */
+    height: auto;
+    display: inline-block; /* Centraliza a imagem */
+}
+
+.description-box {
+    padding: 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.description-box p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Estilo do botão "Saber Mais" */
+.more-info {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.more-info button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.more-info button:hover {
+    background-color: #555;
+}
